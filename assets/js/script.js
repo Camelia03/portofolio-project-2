@@ -53,9 +53,7 @@ function onAnswerClicked(index) {
     }
     if (questionIndex == questions.length - 1) {
         // End of the Quiz Reached
-        questionContainer.classList.add("hidden")
-        summary.classList.remove("hidden")
-        results.innerText = "Congratulations, " + userName + "! You answered correct to " + numberOfCorrectAnswers + " out of " + questions.length + " questions."
+        showSummary();
         return;
     }
     questionIndex++
@@ -68,4 +66,10 @@ function showQuestion(questionNumber) {
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].innerText = questions[questionNumber].answers[i];
     }
+}
+
+function showSummary() {
+    questionContainer.classList.add("hidden")
+    summary.classList.remove("hidden")
+    results.innerText = "Congratulations, " + userName + "! You answered correct to " + numberOfCorrectAnswers + " out of " + questions.length + " questions."
 }
