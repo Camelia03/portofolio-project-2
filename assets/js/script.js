@@ -10,6 +10,10 @@ let questions = [{
     title: "What's your best friend's name?",
     answers: ["Adina", "Diana", "Cristina", "Rares"],
     correctAnswer: 3
+}, {
+    title: "What's your mom's name?",
+    answers: ["Mariana", "Adela", "Dana", "Lucretia"],
+    correctAnswer: 0
 }]
 
 let questionIndex = 0;
@@ -19,6 +23,8 @@ let startButton = document.getElementById("start-btn");
 let questionContainer = document.getElementById("question-container");
 let question = document.getElementById("question");
 let answerButtons = document.getElementsByClassName("answer-btn");
+let summary = document.getElementById("summary");
+let results = document.getElementById("results");
 addEventListeners();
 
 function addEventListeners() {
@@ -43,7 +49,10 @@ function onAnswerClicked(index) {
         numberOfCorrectAnswers++;
     }
     if (questionIndex == questions.length - 1) {
+        // End of the Quiz Reached
         questionContainer.classList.add("hidden")
+        summary.classList.remove("hidden")
+        results.innerText = "Congratulations! You answered correct to " + numberOfCorrectAnswers + " questions out of " + questions.length + " questions."
         return;
     }
     questionIndex++
