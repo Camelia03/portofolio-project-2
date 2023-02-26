@@ -28,7 +28,9 @@ let results = document.getElementById("results");
 let userNameInput = document.getElementById("username");
 let userName = "";
 let startContainer = document.getElementById("start-container");
+let restartButton = document.getElementById("restart-btn");
 addEventListeners();
+
 
 function addEventListeners() {
     startButton.addEventListener("click", onStartClicked)
@@ -38,7 +40,10 @@ function addEventListeners() {
             onAnswerClicked(i);
         })
     }
+
+    restartButton.addEventListener("click", onRestartClicked)
 }
+
 
 function onStartClicked() {
     userName = userNameInput.value;
@@ -46,6 +51,7 @@ function onStartClicked() {
     startContainer.classList.add("hidden")
     showQuestion(questionIndex);
 }
+
 
 function onAnswerClicked(index) {
     if (index == questions[questionIndex].correctAnswer) {
@@ -58,8 +64,8 @@ function onAnswerClicked(index) {
     }
     questionIndex++
     showQuestion(questionIndex);
-    console.log(numberOfCorrectAnswers)
 }
+
 
 function showQuestion(questionNumber) {
     question.innerText = questions[questionNumber].title;
@@ -68,8 +74,22 @@ function showQuestion(questionNumber) {
     }
 }
 
+
 function showSummary() {
     questionContainer.classList.add("hidden")
     summary.classList.remove("hidden")
     results.innerText = "Congratulations, " + userName + "! You answered correct to " + numberOfCorrectAnswers + " out of " + questions.length + " questions."
+}
+
+function onRestartClicked() {
+    // Hide summary
+    summary.classList.add("hidden")
+
+    // Show start up
+    questionContainer.classList.add("hidden")
+    startContainer.classList.remove("hidden")
+
+    // Reset index
+    questionIndex = 0;
+    numberOfCorrectAnswers = 0;
 }
