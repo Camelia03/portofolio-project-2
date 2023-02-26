@@ -6,7 +6,7 @@ body {
     font-family: "Kaushan Script", sans-serif;
     margin-top: 60px;
     padding: 0;
-    color: #4a6863;
+    color: #f7f9f9;
     background-color: #dbe8e7;
     display: flex;
     justify-content: center;
@@ -38,4 +38,8 @@ body {
 
 .btn:hover {
     border-color: #987304;
+}
+
+.hidden {
+    display: none;
 }

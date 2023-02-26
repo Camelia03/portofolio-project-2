@@ -6,29 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <div class="container">
-        <div id="question-container">
+        <button id="start-btn" class="start-btn btn">Let's get Started!</button>
+
+        <div id="question-container" class="hidden">
             <div id="question">Question</div>
             <div class="answer-buttons">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
+                <button class="btn answer-btn">Answer 1</button>
+                <button class="btn answer-btn">Answer 2</button>
             </div>
             <div class="answer-buttons">
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+                <button class="btn answer-btn">Answer 3</button>
+                <button class="btn answer-btn">Answer 4</button>
             </div>
         </div>
         <div class="controls">
-            <button id="start-btn" class="start-btn btn">Let's get Started!</button>
-            <button id="next-btn" class="next-btn btn">Next Question</button>
+            <button id="next-btn" class="next-btn btn hidden">Next Question</button>
 
         </div>
     </div>
+
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
