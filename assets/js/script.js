@@ -1,16 +1,19 @@
 let questions = [{
     title: "What's your name?",
     answers: ["Maria", "Ioan", "Mihai", "Elena"],
+    correctAnswer: 1
 }, {
     title: "What's your dog's name?",
     answers: ["Zara", "Bobby", "Lessie", "Toby"],
+    correctAnswer: 2
 }, {
     title: "What's your best friend's name?",
     answers: ["Adina", "Diana", "Cristina", "Rares"],
+    correctAnswer: 3
 }]
 
 let questionIndex = 0;
-
+let numberOfCorrectAnswers = 0;
 
 let startButton = document.getElementById("start-btn");
 let questionContainer = document.getElementById("question-container");
@@ -26,7 +29,12 @@ startButton.addEventListener("click", function () {
 
 for (let i = 0; i < answerButtons.length; i++) {
     answerButtons[i].addEventListener("click", function () {
-        alert("Clicked button" + i)
+        if (i == questions[questionIndex].correctAnswer) {
+            numberOfCorrectAnswers++;
+        }
+        questionIndex++
+        showQuestion(questionIndex);
+        console.log(numberOfCorrectAnswers)
     })
 }
 
