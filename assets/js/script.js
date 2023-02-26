@@ -25,6 +25,9 @@ let question = document.getElementById("question");
 let answerButtons = document.getElementsByClassName("answer-btn");
 let summary = document.getElementById("summary");
 let results = document.getElementById("results");
+let userNameInput = document.getElementById("username");
+let userName = "";
+let startContainer = document.getElementById("start-container");
 addEventListeners();
 
 function addEventListeners() {
@@ -38,9 +41,9 @@ function addEventListeners() {
 }
 
 function onStartClicked() {
-    startButton.classList.add("hidden")
+    userName = userNameInput.value;
     questionContainer.classList.remove("hidden")
-
+    startContainer.classList.add("hidden")
     showQuestion(questionIndex);
 }
 
@@ -52,7 +55,7 @@ function onAnswerClicked(index) {
         // End of the Quiz Reached
         questionContainer.classList.add("hidden")
         summary.classList.remove("hidden")
-        results.innerText = "Congratulations! You answered correct to " + numberOfCorrectAnswers + " questions out of " + questions.length + " questions."
+        results.innerText = "Congratulations, " + userName + "! You answered correct to " + numberOfCorrectAnswers + " out of " + questions.length + " questions."
         return;
     }
     questionIndex++
