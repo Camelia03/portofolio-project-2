@@ -4,24 +4,32 @@
 
 body {
     font-family: 'Golos Text', sans-serif;
-    margin-top: 60px;
+    margin: 0;
     padding: 0;
     color: #f7f9f9;
+}
+
+.main-content {
+    min-height: 80vh;
     background-image: url(../images/banner-ged899ee4f_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
     text-align: center;
     margin: 0;
+    padding-bottom: 60px;
+    color: #2e2942;
 }
 
 .container {
     width: 80%;
-    margin-top: 80px;
-    margin-left: 500px;
-    max-width: 800px;
+    max-width: 600px;
     background-color: #2e2942;
     border-radius: 5px;
     padding: 14px;
@@ -38,8 +46,6 @@ h1 {
     align-items: flex-start;
 }
 
-
-
 .btn {
     border: 2px solid;
     background-color: #ffff;
@@ -55,4 +61,32 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+/* footer */
+
+footer {
+    background-color: #2e2942;
+    color: #F0FFFF;
+    padding-bottom: 14px;
+}
+
+.contact-wrapper {
+    text-align: center;
+    display: inline;
+    padding: 0 28px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+    padding: 0 28px;
+}
+
+.social-networks i {
+    color: #F0FFFF;
+    font-size: 30px;
 }

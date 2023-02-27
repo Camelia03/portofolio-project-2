@@ -18,39 +18,74 @@
 </head>
 
 <body>
-    <div>
-        <h1>Countries of Europe Quiz</h1>
-    </div>
-    <div class="container">
-        <div id="start-container">
-            <label for="username">User Name</label>
-            <input id="username" class="text-input" name="user_name" type="text" required>
-            <button id="start-btn" class="start-btn btn">Let's get Started!</button>
+    <div class="main-content">
+        <div>
+            <h1>Countries of Europe Quiz</h1>
+        </div>
+        <div class="container">
+            <div id="start-container">
+                <label for="username">User Name</label>
+                <input id="username" class="text-input" name="user_name" type="text" required>
+                <button id="start-btn" class="start-btn btn">Let's get Started!</button>
+            </div>
 
-        </div>
-        <div id="question-container" class="hidden">
-            <div id="question">Question</div>
-            <div class="answer-buttons">
-                <button class="btn answer-btn">Answer 1</button>
-                <button class="btn answer-btn">Answer 2</button>
+            <div id="question-container" class="hidden">
+                <div id="question">Question</div>
+                <div class="answer-buttons">
+                    <button class="btn answer-btn">Answer 1</button>
+                    <button class="btn answer-btn">Answer 2</button>
+                </div>
+                <div class="answer-buttons">
+                    <button class="btn answer-btn">Answer 3</button>
+                    <button class="btn answer-btn">Answer 4</button>
+                </div>
             </div>
-            <div class="answer-buttons">
-                <button class="btn answer-btn">Answer 3</button>
-                <button class="btn answer-btn">Answer 4</button>
-            </div>
-        </div>
-        <div class="controls">
-            <button id="next-btn" class="next-btn btn hidden">Next Question</button>
+            <div class="controls">
+                <button id="next-btn" class="next-btn btn hidden">Next Question</button>
 
-        </div>
-        <div id="summary" class="hidden">
-            <h2>Summary</h2>
-            <div>
-                <p id="results"></p>
             </div>
-            <button id="restart-btn">Restart</button>
+            <div id="summary" class="hidden">
+                <h2>Summary</h2>
+                <div>
+                    <p id="results"></p>
+                </div>
+                <button id="restart-btn">Restart</button>
+            </div>
         </div>
     </div>
+
+    <!--Footer-->
+
+    <footer>
+        <div class="contact-wrapper">
+            <h3>Contact Us!</h3>
+            <p>Got a question? Let's get in touch!</p>
+            <p> 017635561283 | info@getyourquiz.com</p>
+            <p>Get Your Quiz GmbH, Dorfstrasse 70, Munich</p>
+        </div>
+
+        <ul class="social-networks">
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/b5643c0885.js" crossorigin="anonymous"></script>
 
     <script src="assets/js/script.js"></script>
 
