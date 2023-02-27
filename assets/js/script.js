@@ -1,19 +1,31 @@
 let questions = [{
-    title: "What's your name?",
-    answers: ["Maria", "Ioan", "Mihai", "Elena"],
+    title: "What's the capital of Germany?",
+    answers: ["Paris", "Berlin", "Munich", "Barcelona"],
     correctAnswer: 1
 }, {
-    title: "What's your dog's name?",
-    answers: ["Zara", "Bobby", "Lessie", "Toby"],
+    title: "What's the capital of Spain?",
+    answers: ["Rome", "Bucharest", "Madrid", "Sofia"],
     correctAnswer: 2
 }, {
-    title: "What's your best friend's name?",
-    answers: ["Adina", "Diana", "Cristina", "Rares"],
+    title: "What is the richest country in Europe?",
+    answers: ["Germany", "Austria", "Sweden", "Luxembourg"],
     correctAnswer: 3
 }, {
-    title: "What's your mom's name?",
-    answers: ["Mariana", "Adela", "Dana", "Lucretia"],
+    title: "What is Europe's smallest city?",
+    answers: ["Vatican ", "San Marino", "Amsterdam", "Prague"],
     correctAnswer: 0
+}, {
+    title: "What is the poorest country in Europe?",
+    answers: ["Bulgaria ", "Romania", "Greece", "Slovakia"],
+    correctAnswer: 0
+}, {
+    title: "What's the capital of Andorra?",
+    answers: ["Florence ", "Baku", "Andorra la Vella", "Sofia"],
+    correctAnswer: 2
+}, {
+    title: "How many capitals are in Europe?",
+    answers: ["43 ", "48", "45", "47"],
+    correctAnswer: 1
 }]
 
 let questionIndex = 0;

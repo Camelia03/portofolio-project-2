@@ -3,30 +3,42 @@
 }
 
 body {
-    font-family: "Kaushan Script", sans-serif;
+    font-family: 'Golos Text', sans-serif;
     margin-top: 60px;
     padding: 0;
     color: #f7f9f9;
-    background-color: #dbe8e7;
+    background-image: url(../images/banner-ged899ee4f_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin-top: 80px;
+    margin-left: 500px;
+    max-width: 800px;
+    background-color: #2e2942;
+    border-radius: 5px;
+    padding: 14px;
+    box-shadow: 0 0 10px 2px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container {
-    width: 80%;
-    max-width: 800px;
-    background-color: #4a6863;
-    border-radius: 5px;
-    padding: 14px;
-    box-shadow: 0 0 10px 2px;
-}
-
 .answer-buttons {
     display: flex;
     margin: 20px 0;
-    column-gap: 60px;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+
+
 
 .btn {
     border: 2px solid;
@@ -37,7 +49,8 @@ body {
 }
 
 .btn:hover {
-    border-color: #987304;
+    background-color: #2e2942;
+    color: #f7f9f9;
 }
 
 .hidden {
