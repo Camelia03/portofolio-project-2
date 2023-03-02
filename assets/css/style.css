@@ -24,7 +24,9 @@ h1 {
     text-align: center;
     margin: 0;
     padding-bottom: 60px;
-    color: #2e2942;
+    color: #2d2354;
+    text-shadow: 2px 2px #fdfcff;
+
 }
 
 .container {
@@ -44,6 +46,7 @@ h1 {
     margin: 20px 0;
     justify-content: space-between;
     align-items: flex-start;
+    column-gap: 20px;
 }
 
 .btn {
@@ -52,6 +55,13 @@ h1 {
     border-radius: 10px;
     padding: 5px 14px;
     color: black;
+    font-family: 'Golos Text', sans-serif;
+    cursor: pointer;
+}
+
+.answer-buttons .btn {
+    width: 120px;
+    height: 60px;
 }
 
 .btn:hover {
