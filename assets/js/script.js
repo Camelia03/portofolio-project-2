@@ -3,7 +3,7 @@ let questions = [{
     answers: ["Paris", "Berlin", "Munich", "Barcelona"],
     correctAnswer: 1,
     image: {
-        url: "assets/images/question-image-1.jpg",
+        url: "assets/images/question-image-1.webp",
         alt: "Question 1 image"
     }
 
@@ -12,7 +12,7 @@ let questions = [{
     answers: ["Rome", "Bucharest", "Madrid", "Sofia"],
     correctAnswer: 2,
     image: {
-        url: "assets/images/question-image-2.jpg",
+        url: "assets/images/question-image-2.webp",
         alt: "Question 2 image"
     }
 }, {
