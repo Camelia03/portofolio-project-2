@@ -89,6 +89,11 @@ function addEventListeners() {
 
 
 function onStartClicked() {
+    if (userNameInput.value === "") {
+        alert("Please add a user name!")
+        return;
+    }
+
     userName = userNameInput.value;
     questionContainer.classList.remove("hidden")
     startContainer.classList.add("hidden")
