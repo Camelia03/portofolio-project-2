@@ -42,12 +42,25 @@ h1 {
     position: relative;
 }
 
+#question-container {
+    width: 100%;
+}
+
+.question-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 250px;
+}
+
 .answer-buttons {
     display: flex;
-    margin: 20px 0;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    column-gap: 20px;
 }
 
 .btn {

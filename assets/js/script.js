@@ -1,31 +1,60 @@
 let questions = [{
     title: "What's the capital of Germany?",
     answers: ["Paris", "Berlin", "Munich", "Barcelona"],
-    correctAnswer: 1
+    correctAnswer: 1,
+    image: {
+        url: "assets/images/question-image-1.jpg",
+        alt: "Question 1 image"
+    }
+
 }, {
     title: "What's the capital of Spain?",
     answers: ["Rome", "Bucharest", "Madrid", "Sofia"],
-    correctAnswer: 2
+    correctAnswer: 2,
+    image: {
+        url: "assets/images/question-image-2.jpg",
+        alt: "Question 2 image"
+    }
 }, {
     title: "What is the richest country in Europe?",
     answers: ["Germany", "Austria", "Sweden", "Luxembourg"],
-    correctAnswer: 3
+    correctAnswer: 3,
+    image: {
+        url: "assets/images/question-image-1.jpg",
+        alt: "Question 1 image"
+    }
 }, {
     title: "What is Europe's smallest city?",
     answers: ["Vatican ", "San Marino", "Amsterdam", "Prague"],
-    correctAnswer: 0
+    correctAnswer: 0,
+    image: {
+        url: "assets/images/question-image-1.jpg",
+        alt: "Question 1 image"
+    }
 }, {
     title: "What is the poorest country in Europe?",
     answers: ["Bulgaria ", "Romania", "Greece", "Slovakia"],
-    correctAnswer: 0
+    correctAnswer: 0,
+    image: {
+        url: "assets/images/question-image-1.jpg",
+        alt: "Question 1 image"
+    }
 }, {
     title: "What's the capital of Andorra?",
     answers: ["Florence ", "Baku", "Andorra la Vella", "Sofia"],
-    correctAnswer: 2
+    correctAnswer: 2,
+    image: {
+        url: "assets/images/question-image-1.jpg",
+        alt: "Question 1 image"
+    }
 }, {
     title: "How many capitals are in Europe?",
     answers: ["43 ", "48", "45", "47"],
-    correctAnswer: 1
+    correctAnswer: 1,
+    image: {
+        url: "assets/images/question-image-1.jpg",
+        alt: "Question 1 image"
+    }
 }]
 
 let questionIndex = 0;
@@ -42,6 +71,7 @@ let userName = "";
 let startContainer = document.getElementById("start-container");
 let restartButton = document.getElementById("restart-btn");
 let questionCounter = document.getElementById("question-counter");
+let questionImage = document.getElementById("question-image");
 addEventListeners();
 
 
@@ -81,12 +111,17 @@ function onAnswerClicked(index) {
 
 
 function showQuestion(questionNumber) {
-    question.innerText = questions[questionNumber].title;
+    let currentQuestion = questions[questionNumber];
+
+    question.innerText = currentQuestion.title;
     for (let i = 0; i < answerButtons.length; i++) {
-        answerButtons[i].innerText = questions[questionNumber].answers[i];
+        answerButtons[i].innerText = currentQuestion.answers[i];
     }
 
     questionCounter.innerText = `${questionNumber +1} / ${questions.length}`;
+
+    questionImage.src = currentQuestion.image.url;
+    questionImage.alt = currentQuestion.image.alt;
 }
 
 
