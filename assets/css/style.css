@@ -39,6 +39,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .answer-buttons {
@@ -72,6 +73,14 @@ h1 {
 .hidden {
     display: none;
 }
+
+#question-counter {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+}
+
+
 
 /* footer */
 

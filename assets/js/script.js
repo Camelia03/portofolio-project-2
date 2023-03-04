@@ -41,6 +41,7 @@ let userNameInput = document.getElementById("username");
 let userName = "";
 let startContainer = document.getElementById("start-container");
 let restartButton = document.getElementById("restart-btn");
+let questionCounter = document.getElementById("question-counter");
 addEventListeners();
 
 
@@ -84,6 +85,8 @@ function showQuestion(questionNumber) {
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].innerText = questions[questionNumber].answers[i];
     }
+
+    questionCounter.innerText = `${questionNumber +1} / ${questions.length}`;
 }
 
 
