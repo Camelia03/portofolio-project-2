@@ -97,9 +97,14 @@ function onStartClicked() {
 
 
 function onAnswerClicked(index) {
-    if (index == questions[questionIndex].correctAnswer) {
+    let correctAnswer = questions[questionIndex].correctAnswer;
+    // Check if answer is correct
+    if (index == correctAnswer) {
         numberOfCorrectAnswers++;
+    } else {
+        alert(`Ups! The correct answer is: ${questions[questionIndex].answers[correctAnswer]}`);
     }
+
     if (questionIndex == questions.length - 1) {
         // End of the Quiz Reached
         showSummary();
