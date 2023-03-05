@@ -120,3 +120,23 @@ footer {
     color: #F0FFFF;
     font-size: 30px;
 }
+
+/* Media queries */
+
+/* For small screens sizes up to 500px wide */
+@media screen and (max-width: 600px) {
+    h1 {
+        text-shadow: none;
+        color: #fff;
+    }
+
+    .start-form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+    }
+
+    .image-container {
+        display: none;
+    }
+}
