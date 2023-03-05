@@ -1,3 +1,4 @@
+// List of questions
 let questions = [{
     title: "What's the capital of Germany?",
     answers: ["Paris", "Berlin", "Munich", "Barcelona"],
@@ -6,7 +7,6 @@ let questions = [{
         url: "assets/images/question-image-1.webp",
         alt: "Question 1 image"
     }
-
 }, {
     title: "What's the capital of Spain?",
     answers: ["Rome", "Bucharest", "Madrid", "Sofia"],
@@ -57,9 +57,12 @@ let questions = [{
     }
 }]
 
+// Global variables
 let questionIndex = 0;
 let numberOfCorrectAnswers = 0;
+let userName = "";
 
+// Html references
 let startButton = document.getElementById("start-btn");
 let questionContainer = document.getElementById("question-container");
 let question = document.getElementById("question");
@@ -67,14 +70,14 @@ let answerButtons = document.getElementsByClassName("answer-btn");
 let summary = document.getElementById("summary");
 let results = document.getElementById("results");
 let userNameInput = document.getElementById("username");
-let userName = "";
 let startContainer = document.getElementById("start-container");
 let restartButton = document.getElementById("restart-btn");
 let questionCounter = document.getElementById("question-counter");
 let questionImage = document.getElementById("question-image");
+
 addEventListeners();
 
-
+// Attach Event Listeners to buttons
 function addEventListeners() {
     startButton.addEventListener("click", onStartClicked)
 
@@ -89,14 +92,20 @@ function addEventListeners() {
 
 
 function onStartClicked() {
+    // Validate that user name input is not empty
     if (userNameInput.value === "") {
         alert("Please add a user name!")
         return;
     }
 
+    // Save user name for later
     userName = userNameInput.value;
+
+    // Hide start section and show the quiz section
     questionContainer.classList.remove("hidden")
     startContainer.classList.add("hidden")
+
+    // Display the first question
     showQuestion(questionIndex);
 }
 
@@ -121,23 +130,32 @@ function onAnswerClicked(index) {
 
 
 function showQuestion(questionNumber) {
+    // Get current question
     let currentQuestion = questions[questionNumber];
 
+    // Set question title
     question.innerText = currentQuestion.title;
+
+    // Set answers
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].innerText = currentQuestion.answers[i];
     }
 
+    // Set counter
     questionCounter.innerText = `${questionNumber +1} / ${questions.length}`;
 
+    // Set image
     questionImage.src = currentQuestion.image.url;
     questionImage.alt = currentQuestion.image.alt;
 }
 
 
 function showSummary() {
+    // Hide quiz section and show summary
     questionContainer.classList.add("hidden")
     summary.classList.remove("hidden")
+
+    // Set summary text
     results.innerText = "Congratulations, " + userName + "! You answered correct to " + numberOfCorrectAnswers + " out of " + questions.length + " questions."
 }
 
