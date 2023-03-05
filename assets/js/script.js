@@ -20,40 +20,40 @@ let questions = [{
     answers: ["Germany", "Austria", "Sweden", "Luxembourg"],
     correctAnswer: 3,
     image: {
-        url: "assets/images/question-image-1.jpg",
-        alt: "Question 1 image"
+        url: "assets/images/question-image-3.webp",
+        alt: "Question 3 image"
     }
 }, {
     title: "What is Europe's smallest city?",
     answers: ["Vatican ", "San Marino", "Amsterdam", "Prague"],
     correctAnswer: 0,
     image: {
-        url: "assets/images/question-image-1.jpg",
-        alt: "Question 1 image"
+        url: "assets/images/question-image-4.webp",
+        alt: "Question 4 image"
     }
 }, {
     title: "What is the poorest country in Europe?",
     answers: ["Bulgaria ", "Romania", "Greece", "Slovakia"],
     correctAnswer: 0,
     image: {
-        url: "assets/images/question-image-1.jpg",
-        alt: "Question 1 image"
+        url: "assets/images/question-image-5.webp",
+        alt: "Question 5 image"
     }
 }, {
     title: "What's the capital of Andorra?",
     answers: ["Florence ", "Baku", "Andorra la Vella", "Sofia"],
     correctAnswer: 2,
     image: {
-        url: "assets/images/question-image-1.jpg",
-        alt: "Question 1 image"
+        url: "assets/images/question-image-6.webp",
+        alt: "Question 6 image"
     }
 }, {
     title: "How many capitals are in Europe?",
     answers: ["43 ", "48", "45", "47"],
     correctAnswer: 1,
     image: {
-        url: "assets/images/question-image-1.jpg",
-        alt: "Question 1 image"
+        url: "assets/images/question-image-7.webp",
+        alt: "Question 7 image"
     }
 }]
 
