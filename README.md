@@ -1,5 +1,8 @@
 # Countries of Europe
 
+![Responsive image](assets/images/responsive.png)
+
+
 **Countries of Europe** is a quiz where a user can test his knowledge about Europe's countries and their interesting facts that make them unique. The quiz will be targeted toward people who not only love geography but also love to learn everything about Europe's countries. Countries of Europe is a fully responsive JavaScript quiz game that will allow users to test their geography knowledge and to learn using photographs from around Europe.
 
 ## Features
@@ -41,6 +44,7 @@ The contact section includes social media icons so users can find the company on
 
 ## Features left to Implement
 - a table with previous users who played the quiz and their score
+- PUNE SA MEARGA ENTER
 
 ## Testing
 ### Validator Testing
