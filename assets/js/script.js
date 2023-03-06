@@ -111,6 +111,12 @@ function addEventListeners() {
         })
     }
 
+    userNameInput.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+            onStartClicked();
+        }
+    })
+
     restartButton.addEventListener("click", onRestartClicked)
 }
 
