@@ -79,7 +79,7 @@ let questions = [{
         url: "assets/images/question-image-10.webp",
         alt: "Question 10 image"
     }
-}]
+}];
 
 // Global variables
 let questionIndex = 0;
@@ -103,28 +103,28 @@ addEventListeners();
 
 // Attach Event Listeners to buttons
 function addEventListeners() {
-    startButton.addEventListener("click", onStartClicked)
+    startButton.addEventListener("click", onStartClicked);
 
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].addEventListener("click", function () {
             onAnswerClicked(i);
-        })
+        });
     }
 
     userNameInput.addEventListener("keyup", function (event) {
         if (event.key === "Enter") {
             onStartClicked();
         }
-    })
+    });
 
-    restartButton.addEventListener("click", onRestartClicked)
+    restartButton.addEventListener("click", onRestartClicked);
 }
 
 
 function onStartClicked() {
     // Validate that user name input is not empty
     if (userNameInput.value === "") {
-        alert("Please add a user name!")
+        alert("Please add a user name!");
         return;
     }
 
@@ -132,8 +132,8 @@ function onStartClicked() {
     userName = userNameInput.value;
 
     // Hide start section and show the quiz section
-    questionContainer.classList.remove("hidden")
-    startContainer.classList.add("hidden")
+    questionContainer.classList.remove("hidden");
+    startContainer.classList.add("hidden");
 
     // Display the first question
     showQuestion(questionIndex);
@@ -154,7 +154,7 @@ function onAnswerClicked(index) {
         showSummary();
         return;
     }
-    questionIndex++
+    questionIndex++;
     showQuestion(questionIndex);
 }
 
@@ -182,20 +182,20 @@ function showQuestion(questionNumber) {
 
 function showSummary() {
     // Hide quiz section and show summary
-    questionContainer.classList.add("hidden")
-    summary.classList.remove("hidden")
+    questionContainer.classList.add("hidden");
+    summary.classList.remove("hidden");
 
     // Set summary text
-    results.innerText = "Congratulations, " + userName + "! You answered correct to " + numberOfCorrectAnswers + " out of " + questions.length + " questions."
+    results.innerText = "Congratulations, " + userName + "! You answered correct to " + numberOfCorrectAnswers + " out of " + questions.length + " questions.";
 }
 
 function onRestartClicked() {
     // Hide summary
-    summary.classList.add("hidden")
+    summary.classList.add("hidden");
 
     // Show start up
-    questionContainer.classList.add("hidden")
-    startContainer.classList.remove("hidden")
+    questionContainer.classList.add("hidden");
+    startContainer.classList.remove("hidden");
 
     // Reset index
     questionIndex = 0;
