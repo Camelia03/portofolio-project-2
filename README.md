@@ -44,41 +44,51 @@ The contact section includes social media icons so users can find the company on
 
 ### *Features left to Implement*
 - a table with previous users who played the quiz and their score
-- PUNE SA MEARGA ENTER
 
 ## Testing
 ### Validator Testing
-HTML
+- HTML
 No errors were returned when passing through the official W3C validator
-CSS
+- CSS
 No errors were found when passing through the official (Jigsaw) validator
-JavaScript
+- JavaScript
 No errors were found when passing through the official Jshint validator
-The following metrics were returned:
+    - The following metrics were returned:
 There are 11 functions in this file.
 Function with the largest signature takes 2 arguments, while the median is 0.
 Largest function has 10 statements in it, while the median is 3.
 The most complex function has a cyclomatic complexity value of 4 while the median is 2.
 
+## Accesibility
+
+I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+
+Lighthouse Score for Desktop size
+![Lighthouse Score Screenshot](assets/images/Lighthouse%20screenshot.png)
+
+Lighthouse Score for Mobile size
+![Lighthouse Score Screenshot](assets/images/Lighthouse%20screensho%20mobile.png)
+
 ## Unfixed Bugs
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+No unfixed Bugs.
+
 
 ## Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
-In the GitHub repository, navigate to the Settings tab
-From the source section drop-down menu, select the Master Branch
-Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-The live link can be found here - https://code-institute-org.github.io/love-maths/
+1. In the GitHub repository, navigate to the Settings tab.
+2. Navigate to the Pages section.
+3. From the Build and Deployment section, select the Main Branch as the source.
+4. Deployment workflow should start.
+
+The live link can be found here - https://camelia03.github.io/portofolio-project-2/
 
 ## Credits
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-
-You can break the credits section up into Content and Media, depending on what you have included in your project.
 
 ### Content
-The text for the Home page was taken from Wikipedia Article A
-Instructions on how to implement form validation on the Sign Up page was taken from Specific YouTube Tutorial
-The icons in the footer were taken from Font Awesome
+- The questions were inspired by the following website: [Trafalgar.com](https://www.trafalgar.com/real-word/21-facts-europe-never-knew/)
+- The icons were taken from [Font Awesome](https://fontawesome.com/).
 ### Media
-The photos used on the home and sign up page are from This Open Source site
-The images used for the gallery page were taken from this other open source site
+- The photo used on the background of the quiz is from [Unsplash](https://unsplash.com/).
+- The images used for the questions 1, 2, 3 were taken from [Unsplash](https://unsplash.com/).
+- The images used for questions 4 to 10 were taken from [Pixabay](https://pixabay.com/).
+
