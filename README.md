@@ -6,35 +6,35 @@
 **Countries of Europe** is a quiz where a user can test his knowledge about Europe's countries and their interesting facts that make them unique. The quiz will be targeted toward people who not only love geography but also love to learn everything about Europe's countries. Countries of Europe is a fully responsive JavaScript quiz game that will allow users to test their geography knowledge and to learn using photographs from around Europe.
 
 ## Features
-### Existing Features
-The Countries of Europe Logo and Heading
+### *Existing Features*
+**The Countries of Europe Logo and Heading**
 
 Featured at the top of the page, the Countries of Europe logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the quiz.
 
 ![Logo and heading image](assets/images/logo%20and%20heading.png)
 
 
-### The Game Area
+### **The Game Section**
 
 This section will allow the user to register his name and to start the quiz. This area will hide after the user is clicking "Let's get Started!" and the quiz area will appear which will allow the user to play the questions. 
 
 ![Start image](assets/images/user%20login%20and%20let's%20get%20started%20button.png)
 
-### The Question section
+### **The Question Section**
 
 The question section is where the user will be able to see the question to answer as part of the quiz. The user will be able to easily see the questions, the answers and the image which reflects the correct answer.
 The user will be able to select the correct answer by clicking on the different buttons.
 
 ![First question image](assets/images/question%20container.png)
 
-### The Summary Area
+### **The Summary Section**
 
 This section will allow the user to see exactly how many correct answers they have provided.
 
 ![Summary image](assets/images/summary.png)
 
 
-### The Contact Section
+### **The Contact Section**
 The contact section encourages users to get in contact and provides a phone number, email address and street address where the company can be found.
 
 The contact section includes social media icons so users can find the company on facebook, twitter, youtube and instagram. The contact section is valuable to the user as it gives them the ability to find and contact the company who made the quiz if they need to.
@@ -42,7 +42,7 @@ The contact section includes social media icons so users can find the company on
 ![Contact image](assets/images/Contact.png)
 
 
-## Features left to Implement
+### *Features left to Implement*
 - a table with previous users who played the quiz and their score
 - PUNE SA MEARGA ENTER
 

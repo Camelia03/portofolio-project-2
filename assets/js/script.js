@@ -24,8 +24,8 @@ let questions = [{
         alt: "Question 3 image"
     }
 }, {
-    title: "What is Europe's smallest city?",
-    answers: ["Vatican ", "San Marino", "Amsterdam", "Prague"],
+    title: "What is the oldest monarchy in Europe?",
+    answers: ["Denmark", "Spain", "Sweden", "Norway"],
     correctAnswer: 0,
     image: {
         url: "assets/images/question-image-4.webp",
@@ -33,27 +33,51 @@ let questions = [{
     }
 }, {
     title: "What is the poorest country in Europe?",
-    answers: ["Bulgaria ", "Romania", "Greece", "Slovakia"],
+    answers: ["Bulgaria", "Romania", "Greece", "Slovakia"],
     correctAnswer: 0,
     image: {
         url: "assets/images/question-image-5.webp",
         alt: "Question 5 image"
     }
 }, {
-    title: "What's the capital of Andorra?",
-    answers: ["Florence ", "Baku", "Andorra la Vella", "Sofia"],
+    title: "What's the country with the most castles in Europe?",
+    answers: ["Germany", "Slovakia", "Czech Republic", "Spain"],
     correctAnswer: 2,
     image: {
         url: "assets/images/question-image-6.webp",
         alt: "Question 6 image"
     }
 }, {
-    title: "How many capitals are in Europe?",
-    answers: ["43 ", "48", "45", "47"],
+    title: "What's the country with the tallest building in Europe?",
+    answers: ["Norway", "Russia", "Italy", "Poland"],
     correctAnswer: 1,
     image: {
         url: "assets/images/question-image-7.webp",
         alt: "Question 7 image"
+    }
+}, {
+    title: "What's the country with the longest coastline in Europe?",
+    answers: ["Italy", "Norway", "Greece", "Portugal"],
+    correctAnswer: 1,
+    image: {
+        url: "assets/images/question-image-8.webp",
+        alt: "Question 8 image"
+    }
+}, {
+    title: "What's the country in Europe where is illegal to mow your lawn on Sundays?",
+    answers: ["Germany", "Austria", "Switzerland", "Finland"],
+    correctAnswer: 2,
+    image: {
+        url: "assets/images/question-image-9.webp",
+        alt: "Question 9 image"
+    }
+}, {
+    title: "What's the country in Europe which doesn't have mosquitos?",
+    answers: ["Norway", "Germany", "United Kingdom", "Iceland"],
+    correctAnswer: 3,
+    image: {
+        url: "assets/images/question-image-10.webp",
+        alt: "Question 10 image"
     }
 }]
 
