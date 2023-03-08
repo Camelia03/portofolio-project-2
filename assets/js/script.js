@@ -144,20 +144,31 @@ function onStartClicked() {
 
 function onAnswerClicked(index) {
     let correctAnswer = questions[questionIndex].correctAnswer;
+
     // Check if answer is correct
     if (index == correctAnswer) {
         numberOfCorrectAnswers++;
-    } else {
-        alert(`Ups! The correct answer is: ${questions[questionIndex].answers[correctAnswer]}`);
     }
 
-    if (questionIndex == questions.length - 1) {
-        // End of the Quiz Reached
-        showSummary();
-        return;
+    // Show correct and wrong answers
+    for (let i = 0; i < answerButtons.length; i++) {
+        if (i === correctAnswer) {
+            answerButtons[i].classList.add("correct");
+        } else {
+            answerButtons[i].classList.add("wrong");
+        }
     }
-    questionIndex++;
-    showQuestion(questionIndex);
+
+    // After 2 seconds show next question or summary
+    setTimeout(function () {
+        if (questionIndex == questions.length - 1) {
+            // End of the Quiz Reached
+            showSummary();
+            return;
+        }
+        questionIndex++;
+        showQuestion(questionIndex);
+    }, 2000);
 }
 
 
@@ -168,9 +179,10 @@ function showQuestion(questionNumber) {
     // Set question title
     question.innerText = currentQuestion.title;
 
-    // Set answers
+    // Set answers and clear correct/wrong status
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].innerText = currentQuestion.answers[i];
+        answerButtons[i].classList.remove("correct", "wrong");
     }
 
     // Set counter
