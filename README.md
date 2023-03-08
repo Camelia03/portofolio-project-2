@@ -11,21 +11,21 @@
 
 Featured at the top of the page, the Countries of Europe logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the quiz.
 
-![Logo and heading image](assets/images/logo%20and%20heading.png)
+![Logo and heading image](assets/images/logo-and-heading.png)
 
 
 ### **The Game Section**
 
 This section will allow the user to register his name and to start the quiz. This area will hide after the user is clicking "Let's get Started!" and the quiz area will appear which will allow the user to play the questions. 
 
-![Start image](assets/images/user%20login%20and%20let's%20get%20started%20button.png)
+![Start image](assets/images/login-and-start.png)
 
 ### **The Question Section**
 
 The question section is where the user will be able to see the question to answer as part of the quiz. The user will be able to easily see the questions, the answers and the image which reflects the correct answer.
 The user will be able to select the correct answer by clicking on the different buttons.
 
-![First question image](assets/images/question%20container.png)
+![First question image](assets/images/question-container.png)
 
 ### **The Summary Section**
 
@@ -64,10 +64,10 @@ No errors were found when passing through the official Jshint validator
 I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
 
 Lighthouse Score for Desktop size
-![Lighthouse Score Screenshot](assets/images/Lighthouse%20screenshot.png)
+![Lighthouse Score Screenshot](assets/images/lighthouse-screenshot-desktop.png)
 
 Lighthouse Score for Mobile size
-![Lighthouse Score Screenshot](assets/images/Lighthouse%20screensho%20mobile.png)
+![Lighthouse Score Screenshot](assets/images/lighthouse-screenshot-mobile.png)
 
 ## Unfixed Bugs
 No unfixed Bugs.

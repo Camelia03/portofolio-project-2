@@ -20,17 +20,16 @@
 
 <body>
     <div class="main-content">
-        <div>
-            <h1><i class="fa-solid fa-earth-europe"></i> Countries of Europe</h1>
-        </div>
+        <h1><i class="fa-solid fa-earth-europe"></i> Countries of Europe</h1>
 
         <div class="container">
             <!-- Start section -->
             <div id="start-container">
                 <div class="start-form">
                     <label for="username"><i class="fa-solid fa-user-large"></i> User Name</label>
-                    <input id="username" class="text-input" name="user_name" type="text" required>
+                    <input id="username" class="text-input" name="username" type="text" required>
                     <button id="start-btn" class="start-btn btn">Let's get Started!</button>
+                    <p id="username-error" class="error hidden">Please add a user name!</p>
                 </div>
             </div>
 
@@ -60,9 +59,7 @@
             <!-- Summary section -->
             <div id="summary" class="hidden">
                 <h2><i class="fa-regular fa-rectangle-list"></i> Summary</h2>
-                <div>
-                    <p id="results"></p>
-                </div>
+                <p id="results"></p>
                 <button id="restart-btn" class="btn">Restart</button>
             </div>
         </div>

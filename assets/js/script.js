@@ -98,6 +98,7 @@ let startContainer = document.getElementById("start-container");
 let restartButton = document.getElementById("restart-btn");
 let questionCounter = document.getElementById("question-counter");
 let questionImage = document.getElementById("question-image");
+let usernameError = document.getElementById("username-error");
 
 addEventListeners();
 
@@ -115,6 +116,7 @@ function addEventListeners() {
         if (event.key === "Enter") {
             onStartClicked();
         }
+        usernameError.classList.add("hidden");
     });
 
     restartButton.addEventListener("click", onRestartClicked);
@@ -122,14 +124,14 @@ function addEventListeners() {
 
 
 function onStartClicked() {
+    // Save user name for later
+    userName = userNameInput.value.trim();
+
     // Validate that user name input is not empty
-    if (userNameInput.value === "") {
-        alert("Please add a user name!");
+    if (userName === "") {
+        usernameError.classList.remove("hidden");
         return;
     }
-
-    // Save user name for later
-    userName = userNameInput.value;
 
     // Hide start section and show the quiz section
     questionContainer.classList.remove("hidden");
