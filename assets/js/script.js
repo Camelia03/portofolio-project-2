@@ -157,6 +157,8 @@ function onAnswerClicked(index) {
         } else {
             answerButtons[i].classList.add("wrong");
         }
+
+        answerButtons[i].setAttribute("disabled", true);
     }
 
     // After 2 seconds show next question or summary
@@ -168,7 +170,7 @@ function onAnswerClicked(index) {
         }
         questionIndex++;
         showQuestion(questionIndex);
-    }, 2000);
+    }, 1500);
 }
 
 
@@ -183,6 +185,7 @@ function showQuestion(questionNumber) {
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].innerText = currentQuestion.answers[i];
         answerButtons[i].classList.remove("correct", "wrong");
+        answerButtons[i].removeAttribute("disabled");
     }
 
     // Set counter
