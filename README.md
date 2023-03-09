@@ -64,13 +64,10 @@ Google Fonts was used for the quiz's font:
 Wireframes were created for mobile and desktop.
 
 ![Wireframe desktop](assets/images/wireframe-desktop.png)
+
+
 ![wireframe mobile](assets/images/wireframe-mobile.png)
 
-## Accessibility
-In order to make the site as accessible as possible, I have taken care that:
-- Using semantic HTML.
-- Using descriptive alt attributes on images on the site.
-- Ensuring that there is a sufficient colour contrast throughout the site.
 
 ## Technologies Used
 ### Languages Used
@@ -104,7 +101,12 @@ No errors were found when passing through the official Jshint validator
 
 ## Accesibility
 
-I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+In order to make the site as accessible as possible, I have taken care to:
+- Use semantic HTML.
+- Use descriptive alt attributes on images on the site.
+- Ensure that there is a sufficient colour contrast throughout the site.
+
+by running it through lighthouse in devtools.
 
 Lighthouse Score for Desktop size
 ![Lighthouse Score Screenshot](assets/images/lighthouse-screenshot-desktop.png)
