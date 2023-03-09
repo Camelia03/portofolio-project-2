@@ -45,6 +45,27 @@ The contact section includes social media icons so users can find the company on
 ### *Features left to Implement*
 - a table with previous users who played the quiz and their score
 
+## Design
+### Color Scheme
+
+![Color Scheme](assets/images/color-palette.png)
+
+- The color palette was created using the Coolors website.
+
+### Typography
+Google Fonts was used for the quiz's font:
+
+- Golos Text is used for the body text on the site. It is a sans-serif font.
+
+### Imagery
+- The member images were used with the permission of their owners. All  hint images were taken from the publishers websites. I have credited these in the credits section.
+
+### Wireframes
+Wireframes were created for mobile and desktop.
+
+![Wireframe desktop](assets/images/wireframe-desktop.png)
+![wireframe mobile](assets/images/wireframe-mobile.png)
+
 
 ## Testing
 ### Validator Testing
