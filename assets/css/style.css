@@ -61,6 +61,7 @@ h1 {
 .image-container img {
     width: 100%;
     max-width: 250px;
+    height: 150px;
 }
 
 .answer-buttons {
