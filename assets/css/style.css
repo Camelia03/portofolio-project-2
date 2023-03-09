@@ -6,7 +6,7 @@ body {
     font-family: 'Golos Text', sans-serif;
     margin: 0;
     padding: 0;
-    color: #f7f9f9;
+    color: #ffffff;
 }
 
 .main-content {
@@ -71,7 +71,7 @@ h1 {
 
 .btn {
     border: 2px solid;
-    background-color: #ffff;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 5px 14px;
     color: black;
@@ -86,17 +86,17 @@ h1 {
 
 .btn:hover {
     background-color: #2e2942;
-    color: #f7f9f9;
+    color: #ffffff;
 }
 
 .answer-btn.correct {
-    background-color: green;
-    color: white;
+    background-color: #1b5d1b;
+    color: #ffffff;
 }
 
 .answer-btn.wrong {
-    background-color: red;
-    color: white;
+    background-color: #ff0000;
+    color: #ffffff;
 }
 
 .hidden {
@@ -113,7 +113,7 @@ h1 {
 
 footer {
     background-color: #2e2942;
-    color: #F0FFFF;
+    color: #ffffff;
     padding-bottom: 14px;
 }
 
@@ -133,7 +133,7 @@ footer {
 }
 
 .social-networks i {
-    color: #F0FFFF;
+    color: #ffffff;
     font-size: 30px;
 }
 
@@ -143,7 +143,7 @@ footer {
 @media screen and (max-width: 600px) {
     h1 {
         text-shadow: none;
-        color: #fff;
+        color: #ffffff;
     }
 
     .start-form {

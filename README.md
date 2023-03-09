@@ -45,6 +45,7 @@ The contact section includes social media icons so users can find the company on
 ### *Features left to Implement*
 - a table with previous users who played the quiz and their score
 
+
 ## Testing
 ### Validator Testing
 - HTML
