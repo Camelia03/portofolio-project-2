@@ -66,6 +66,27 @@ Wireframes were created for mobile and desktop.
 ![Wireframe desktop](assets/images/wireframe-desktop.png)
 ![wireframe mobile](assets/images/wireframe-mobile.png)
 
+## Accessibility
+In order to make the site as accessible as possible, I have taken care that:
+- Using semantic HTML.
+- Using descriptive alt attributes on images on the site.
+- Ensuring that there is a sufficient colour contrast throughout the site.
+
+## Technologies Used
+### Languages Used
+HTML, CSS and JavaScript were used to create this website.
+
+### Frameworks, Libraries & Programs Used
+- Balsamiq - Used to create wireframes.
+- Git - For version control.
+- Github - To save and store the files for the website.
+- Google Fonts - To import the fonts used on the website.
+- Font Awesome - For the iconography on the website.
+- Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+- Tiny PNG To compress images.
+- Convertio to resize images and change to webp format.
+- Favicon.io To create favicon.
+- Am I Responsive? To show the website image on a range of devices.
 
 ## Testing
 ### Validator Testing
