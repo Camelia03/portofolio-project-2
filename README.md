@@ -78,14 +78,31 @@ HTML, CSS and JavaScript were used to create this website.
 - Git - For version control.
 - Github - To save and store the files for the website.
 - Google Fonts - To import the fonts used on the website.
-- Font Awesome - For the iconography on the website.
+- Font Awesome - For the icons on the website.
 - Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
-- Tiny PNG To compress images.
-- Convertio to resize images and change to webp format.
-- Favicon.io To create favicon.
-- Am I Responsive? To show the website image on a range of devices.
+- Paint and Pixabay - To compress images.
+- Convertio - To resize images and change to webp format.
+- Favicon.io - To create favicon.
+- Am I Responsive? - To show the website image on a range of devices.
 
 ## Testing
+
+Testing was continuous throughout construction. I used the Chrome developer tools during the build to identify and fix any issues along the way.
+
+The following issues were raised during the meeting with my mentor:
+
+- The user was shown an alert if their username was empty. => The user is now shown an error message underneath the input.
+
+- The user was shown an alert if he clicked on the wrong answer. => After the user clicks on an answer, the answer button change color(red/green) for a brief delay, to reflect the correct and wrong answers.
+
+- When trying to show the correct/wrong answers with the delay, a bug apperead if the user clicked multiple times on the answer buttons then questions would be skipped. => The bug was solved by adding disabled attribute to all the answer buttons until the next question is shown.
+
+- The user was able to enter only spaces as their username. => The bug was fixed by trimming the leading and trailing whitespace of the username.
+
+- The user was not able to submit their username by using the Enter key. => The bug was fixed by listening for the Enter key event on the input and triggering the start logic.
+
+- The answer buttons jumped when changing the question. => The bug was solved by setting a fixed height for the question images.
+
 ### Validator Testing
 - HTML
 No errors were returned when passing through the official W3C validator
