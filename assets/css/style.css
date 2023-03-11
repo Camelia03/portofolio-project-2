@@ -128,6 +128,8 @@ footer {
     text-align: center;
     display: flex;
     padding: 0;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .social-networks>li {
