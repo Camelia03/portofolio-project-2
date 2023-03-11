@@ -156,4 +156,8 @@ footer {
     .image-container {
         display: none;
     }
+
+    .answer-buttons .btn {
+        margin-bottom: 14px;
+    }
 }
