@@ -126,11 +126,14 @@ footer {
 
 .social-networks {
     text-align: center;
+    display: flex;
+    padding: 0;
 }
 
 .social-networks>li {
-    display: inline;
     padding: 0 28px;
+    list-style: none;
+    width: 25%;
 }
 
 .social-networks i {
